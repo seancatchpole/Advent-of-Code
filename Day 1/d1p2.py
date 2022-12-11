@@ -1,6 +1,3 @@
-import pandas as pd 
-import re 
-from pathlib import Path 
 import numpy as np
 
 def readfile():
