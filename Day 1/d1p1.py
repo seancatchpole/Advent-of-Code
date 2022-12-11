@@ -1,5 +1,3 @@
-import numpy as np
-
 def readfile():
     input = "/Users/seancatchpole/Programming/Advent of Code/Day 1/input.txt"
     with open(input) as f:
@@ -12,9 +10,7 @@ def readfile():
         if (not line.strip().isnumeric()):
             elves.append(acc)
             acc = 0
-    elves_array =np.asarray(elves, dtype=np.int_)
-    print(np.amax(elves_array))
-
+    print(max(elves))
 
 if __name__ == "__main__":
     readfile()

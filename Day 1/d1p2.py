@@ -12,8 +12,7 @@ def readfile():
         if (not line.strip().isnumeric()):
             elves.append(acc)
             acc = 0
-    elves_array =np.asarray(elves, dtype=np.int_)
-    sorted = np.sort(elves_array)
+    sorted = np.sort(elves)
     sum = sorted[-1] + sorted[-2] + sorted[-3]
     print(sum)
 
