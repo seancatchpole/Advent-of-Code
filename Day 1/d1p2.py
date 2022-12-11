@@ -1,5 +1,3 @@
-import numpy as np
-
 def readfile():
     input = "/Users/seancatchpole/Programming/Advent of Code/Day 1/input.txt"
     with open(input) as f:
@@ -12,8 +10,8 @@ def readfile():
         if (not line.strip().isnumeric()):
             elves.append(acc)
             acc = 0
-    sorted = np.sort(elves)
-    sum = sorted[-1] + sorted[-2] + sorted[-3]
+    elves.sort()
+    sum = elves[-1] + elves[-2] + elves[-3]
     print(sum)
 
 if __name__ == "__main__":
